@@ -1,0 +1,11 @@
+random.com        |Browser 1|Browser 2|Browser 3
+
+Registration
+
+Email                pass      pass      pass
+Social               pass      pass      pass
+Fields validation    pass      pass      failed
+
+
+
+
