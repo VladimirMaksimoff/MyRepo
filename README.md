@@ -1,2 +1,2 @@
-# Beginning
+# Training Repository 
 Lesson
