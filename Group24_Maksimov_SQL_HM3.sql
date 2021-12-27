@@ -13,7 +13,7 @@ join employees_salary
 on employees.id = employees_salary.id_employees 
 join salary
 on salary.id = employees_salary.id_salary 
-where monthly_salary < '2000'
+where monthly_salary < 2000
 
 --3. Вывести все зарплатные позиции, но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
 select monthly_salary, employee_name   
@@ -31,7 +31,7 @@ join employees_salary
 on salary.id = employees_salary.id_salary 
 left join employees 
 on employees.id = employees_salary.id_employees 
-where monthly_salary < '2000' and employee_name is null
+where monthly_salary < 2000 and employee_name is null
 
  --5. Найти всех работников кому не начислена ЗП.
 select employee_name from employees
@@ -329,7 +329,7 @@ join roles_employee
 on employees.id = roles_employee.employee_id 
 join roles 
 on roles.id = roles_employee.role_id 
-where monthly_salary between'1700' and '2300'
+where monthly_salary between 1700 and 2300
 order by monthly_salary asc 
 
 --31. Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП меньше 2300
@@ -343,7 +343,7 @@ join roles_employee
 on employees.id = roles_employee.employee_id 
 join roles 
 on roles.id = roles_employee.role_id 
-where monthly_salary < '2300'
+where monthly_salary < 2300
 order by monthly_salary asc 
 
 --32. Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП равна 1100, 1500, 2000-
@@ -357,7 +357,7 @@ join roles_employee
 on employees.id = roles_employee.employee_id 
 join roles 
 on roles.id = roles_employee.role_id 
-where monthly_salary in ('1100','1500','2000')
+where monthly_salary in (1100 , 1500 ,2000)
 order by monthly_salary asc 
 
 
