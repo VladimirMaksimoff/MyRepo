@@ -1,2 +1,1 @@
-# Beginning
-Training repository
+
