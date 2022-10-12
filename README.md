@@ -1,2 +1,2 @@
-# Training Repository 
+# MyRepository 
 Lesson
